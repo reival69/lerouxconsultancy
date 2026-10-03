@@ -80,6 +80,14 @@ def page(lang: str, t: dict, form_key: str) -> str:
         + f'<h3>{esc(m["name"])}</h3><p class="role">{esc(m["role"])}</p><p>{esc(m["text"])}</p></article>'
         for m in t["team"]["members"]
     )
+    products = "".join(
+        f'<article class="product"><img src="{prefix}{esc(pr["logo"])}" alt="" width="72" height="72">'
+        f'<div><h3>{esc(pr["name"])}</h3>'
+        + (f'<p>{esc(pr["text"])}</p>' if pr["text"] else "")
+        + f'<a class="product-link" href="{esc(pr["url"])}" target="_blank" rel="noopener">'
+        f'{esc(t["products"]["visit"])} {esc(pr["label"])} →</a></div></article>'
+        for pr in t["products"]["items"]
+    )
     faq = "".join(
         f'<details class="faq-item"><summary>{esc(q["q"])}</summary><p>{esc(q["a"])}</p></details>'
         for q in t["faq"]["items"]
@@ -109,6 +117,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
     <a class="brand" href="{prefix}{LANGS[lang]}" aria-label="Leroux Consultancy">{WORDMARK}</a>
     <nav class="nav" aria-label="{esc(t["nav"]["label"])}">
       <a href="#servicios">{esc(t["nav"]["services"])}</a>
+      <a href="#productos">{esc(t["nav"]["products"])}</a>
       <a href="#nosotros">{esc(t["nav"]["about"])}</a>
       <a href="#equipo">{esc(t["nav"]["team"])}</a>
       <a href="#contacto">{esc(t["nav"]["contact"])}</a>
@@ -142,7 +151,16 @@ def page(lang: str, t: dict, form_key: str) -> str:
     </div>
   </section>
 
-  <section id="nosotros" class="section section-alt">
+  <section id="productos" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">{esc(t["products"]["eyebrow"])}</p>
+      <h2>{esc(t["products"]["title"])}</h2>
+      <p class="section-lead">{esc(t["products"]["lead"])}</p>
+      <div class="products">{products}</div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
     <div class="wrap about-grid">
       <div>
         <p class="eyebrow">{esc(t["about"]["eyebrow"])}</p>

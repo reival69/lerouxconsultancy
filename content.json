@@ -10,7 +10,8 @@
       "services": "Servicios",
       "about": "Sobre nosotros",
       "team": "Equipo",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "products": "Productos"
     },
     "hero": {
       "eyebrow": "Obtén el mejor diseño de redes informáticas",
@@ -143,6 +144,28 @@
       "ok": "¡Gracias! Recibimos tu mensaje y te responderemos pronto.",
       "error": "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos por email.",
       "subject": "Nuevo mensaje desde lerouxconsultancy.com"
+    },
+    "products": {
+      "eyebrow": "Productos",
+      "title": "Nuestros productos",
+      "lead": "Además de nuestros servicios, Leroux Consultancy es dueña de estas marcas.",
+      "visit": "Visitar",
+      "items": [
+        {
+          "name": "CrewSyncro",
+          "logo": "assets/crewsyncro.svg",
+          "url": "https://www.crewsyncro.com",
+          "label": "crewsyncro.com",
+          "text": "App para planificar y hacer seguimiento del trabajo en terreno: check listas, prioridades, responsables y fotos de cada tarea."
+        },
+        {
+          "name": "ES Basic",
+          "logo": "assets/esbasic.png",
+          "url": "https://esbasic.se",
+          "label": "esbasic.se",
+          "text": ""
+        }
+      ]
     }
   },
   "en": {
@@ -155,7 +178,8 @@
       "services": "Services",
       "about": "About us",
       "team": "Team",
-      "contact": "Contact"
+      "contact": "Contact",
+      "products": "Products"
     },
     "hero": {
       "eyebrow": "Get the best computer network design",
@@ -288,6 +312,28 @@
       "ok": "Thank you! We received your message and will get back to you soon.",
       "error": "Your message could not be sent. Please try again or email us.",
       "subject": "New message from lerouxconsultancy.com"
+    },
+    "products": {
+      "eyebrow": "Products",
+      "title": "Our products",
+      "lead": "Besides our services, Leroux Consultancy owns these brands.",
+      "visit": "Visit",
+      "items": [
+        {
+          "name": "CrewSyncro",
+          "logo": "assets/crewsyncro.svg",
+          "url": "https://www.crewsyncro.com",
+          "label": "crewsyncro.com",
+          "text": "App to plan and track field work: checklists, priorities, assignees and photos for every task."
+        },
+        {
+          "name": "ES Basic",
+          "logo": "assets/esbasic.png",
+          "url": "https://esbasic.se",
+          "label": "esbasic.se",
+          "text": ""
+        }
+      ]
     }
   },
   "sv": {
@@ -300,7 +346,8 @@
       "services": "Tjänster",
       "about": "Om oss",
       "team": "Team",
-      "contact": "Kontakt"
+      "contact": "Kontakt",
+      "products": "Produkter"
     },
     "hero": {
       "eyebrow": "Få den bästa designen av datornätverk",
@@ -433,6 +480,28 @@
       "ok": "Tack! Vi har tagit emot ditt meddelande och återkommer snart.",
       "error": "Meddelandet kunde inte skickas. Försök igen eller mejla oss.",
       "subject": "Nytt meddelande från lerouxconsultancy.com"
+    },
+    "products": {
+      "eyebrow": "Produkter",
+      "title": "Våra produkter",
+      "lead": "Utöver våra tjänster äger Leroux Consultancy dessa varumärken.",
+      "visit": "Besök",
+      "items": [
+        {
+          "name": "CrewSyncro",
+          "logo": "assets/crewsyncro.svg",
+          "url": "https://www.crewsyncro.com",
+          "label": "crewsyncro.com",
+          "text": "App för att planera och följa upp fältarbete: checklistor, prioriteringar, ansvariga och foton för varje uppdrag."
+        },
+        {
+          "name": "ES Basic",
+          "logo": "assets/esbasic.png",
+          "url": "https://esbasic.se",
+          "label": "esbasic.se",
+          "text": ""
+        }
+      ]
     }
   }
 }
