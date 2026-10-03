@@ -100,8 +100,18 @@
         <p class="eyebrow">Kontakt</p>
         <h2>Ska vi prata om ditt projekt?</h2>
         <p class="section-lead">Berätta vad du behöver så hjälper vi dig att planera rätt lösning.</p>
+        <ul class="contact-list"><li><span>E-post</span><em class="todo">Saknas</em></li><li><span>Telefon</span><em class="todo">Saknas</em></li><li><span>Plats</span><em class="todo">Saknas</em></li></ul>
       </div>
-      <ul class="contact-list"><li><span>E-post</span><em class="todo">Saknas</em></li><li><span>Telefon</span><em class="todo">Saknas</em></li><li><span>Plats</span><em class="todo">Saknas</em></li></ul>
+      <form class="contact-form" id="contact-form" data-key="" data-ok="Tack! Vi har tagit emot ditt meddelande och återkommer snart." data-error="Meddelandet kunde inte skickas. Försök igen eller mejla oss." data-sending="Skickar…" novalidate>
+        <input type="hidden" name="subject" value="Nytt meddelande från lerouxconsultancy.com">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Namn<input name="name" autocomplete="name" required></label>
+        <label>E-post<input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Telefon <small>(valfritt)</small></span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Meddelande<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Skicka meddelande</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 </main>
@@ -112,6 +122,6 @@
     <div class="lang"><a href="../" hreflang="es" lang="es">ES</a><a href="../en/" hreflang="en" lang="en">EN</a><a href="../sv/" hreflang="sv" lang="sv" aria-current="true">SV</a></div>
   </div>
 </footer>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/site.js" defer></script>
 </body>
 </html>

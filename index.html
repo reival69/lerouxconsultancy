@@ -100,8 +100,18 @@
         <p class="eyebrow">Contacto</p>
         <h2>¿Hablamos de tu proyecto?</h2>
         <p class="section-lead">Cuéntanos qué necesitas y te ayudaremos a planificar la solución adecuada.</p>
+        <ul class="contact-list"><li><span>Email</span><em class="todo">Pendiente</em></li><li><span>Teléfono</span><em class="todo">Pendiente</em></li><li><span>Ubicación</span><em class="todo">Pendiente</em></li></ul>
       </div>
-      <ul class="contact-list"><li><span>Email</span><em class="todo">Pendiente</em></li><li><span>Teléfono</span><em class="todo">Pendiente</em></li><li><span>Ubicación</span><em class="todo">Pendiente</em></li></ul>
+      <form class="contact-form" id="contact-form" data-key="" data-ok="¡Gracias! Recibimos tu mensaje y te responderemos pronto." data-error="No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos por email." data-sending="Enviando…" novalidate>
+        <input type="hidden" name="subject" value="Nuevo mensaje desde lerouxconsultancy.com">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Nombre<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Teléfono <small>(opcional)</small></span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Mensaje<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 </main>
@@ -112,6 +122,6 @@
     <div class="lang"><a href="" hreflang="es" lang="es" aria-current="true">ES</a><a href="en/" hreflang="en" lang="en">EN</a><a href="sv/" hreflang="sv" lang="sv">SV</a></div>
   </div>
 </footer>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="assets/site.js" defer></script>
 </body>
 </html>

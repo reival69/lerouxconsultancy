@@ -1,10 +1,17 @@
 {
+  "form_key": "",
   "es": {
     "meta": {
       "title": "Leroux Consultancy — Diseño de redes informáticas y FTTH",
       "description": "Consultoría informática, planificación detallada de redes FTTH, desarrollo de software para smartphones y publicidad digital para empresas y particulares."
     },
-    "nav": { "label": "Menú principal", "services": "Servicios", "about": "Sobre nosotros", "team": "Equipo", "contact": "Contacto" },
+    "nav": {
+      "label": "Menú principal",
+      "services": "Servicios",
+      "about": "Sobre nosotros",
+      "team": "Equipo",
+      "contact": "Contacto"
+    },
     "hero": {
       "eyebrow": "Obtén el mejor diseño de redes informáticas",
       "title": "Servicios de Redes Informáticas",
@@ -17,10 +24,26 @@
       "title": "Servicios de Diseño de Redes Informáticas",
       "lead": "Trabajamos en conjunto con nuestros clientes para planificar y diseñar redes informáticas de alta calidad que se ajusten a sus necesidades y presupuesto.",
       "items": [
-        { "icon": "laptop", "title": "Consultas informáticas", "text": "Brindamos consultas informáticas personalizadas para satisfacer las necesidades de tu negocio." },
-        { "icon": "fiber", "title": "Planificación detallada de redes FTTH", "text": "Ofrecemos un servicio de planificación detallada de redes FTTH para garantizar una conexión de alta velocidad y estabilidad." },
-        { "icon": "phone", "title": "Desarrollo de software para smartphones", "text": "Contamos con un equipo de expertos en desarrollo de software para smartphones, brindando soluciones innovadoras y eficientes." },
-        { "icon": "megaphone", "title": "Publicidad digital y soporte técnico", "text": "Destaca tu negocio con nuestra publicidad digital y cuenta con nuestro soporte técnico especializado para resolver cualquier problema." }
+        {
+          "icon": "laptop",
+          "title": "Consultas informáticas",
+          "text": "Brindamos consultas informáticas personalizadas para satisfacer las necesidades de tu negocio."
+        },
+        {
+          "icon": "fiber",
+          "title": "Planificación detallada de redes FTTH",
+          "text": "Ofrecemos un servicio de planificación detallada de redes FTTH para garantizar una conexión de alta velocidad y estabilidad."
+        },
+        {
+          "icon": "phone",
+          "title": "Desarrollo de software para smartphones",
+          "text": "Contamos con un equipo de expertos en desarrollo de software para smartphones, brindando soluciones innovadoras y eficientes."
+        },
+        {
+          "icon": "megaphone",
+          "title": "Publicidad digital y soporte técnico",
+          "text": "Destaca tu negocio con nuestra publicidad digital y cuenta con nuestro soporte técnico especializado para resolver cualquier problema."
+        }
       ]
     },
     "about": {
@@ -28,10 +51,22 @@
       "title": "Somos una empresa especializada en consultoría informática y diseño de redes para empresas y particulares.",
       "lead": "Nuestro equipo de expertos en tecnología y redes informáticas brinda servicios de consultoría y planificación detallada de redes FTTH para empresas y particulares.",
       "features": [
-        { "title": "Servicios especializados", "text": "Ofrecemos una amplia gama de servicios para ayudar a las empresas y particulares a mejorar su infraestructura informática." },
-        { "title": "Publicidad digital y diseño gráfico", "text": "Además de nuestros servicios en redes informáticas, también ofrecemos publicidad digital y diseño gráfico para ayudar a las empresas a promover sus marcas y mejorar su presencia en línea." },
-        { "title": "Soporte técnico", "text": "Nuestro equipo de soporte técnico está siempre disponible para brindar asistencia y resolver cualquier problema relacionado con tecnología y redes informáticas." },
-        { "title": "Confianza y calidad", "text": "En Leroux Consultancy, creemos en la importancia de construir relaciones de confianza y proporcionar servicios de alta calidad a nuestros clientes." }
+        {
+          "title": "Servicios especializados",
+          "text": "Ofrecemos una amplia gama de servicios para ayudar a las empresas y particulares a mejorar su infraestructura informática."
+        },
+        {
+          "title": "Publicidad digital y diseño gráfico",
+          "text": "Además de nuestros servicios en redes informáticas, también ofrecemos publicidad digital y diseño gráfico para ayudar a las empresas a promover sus marcas y mejorar su presencia en línea."
+        },
+        {
+          "title": "Soporte técnico",
+          "text": "Nuestro equipo de soporte técnico está siempre disponible para brindar asistencia y resolver cualquier problema relacionado con tecnología y redes informáticas."
+        },
+        {
+          "title": "Confianza y calidad",
+          "text": "En Leroux Consultancy, creemos en la importancia de construir relaciones de confianza y proporcionar servicios de alta calidad a nuestros clientes."
+        }
       ]
     },
     "team": {
@@ -39,19 +74,43 @@
       "title": "Conoce a nuestro equipo",
       "lead": "Expertos en diseño de redes, desarrollo de software y publicidad digital, listos para brindarle la mejor solución tecnológica.",
       "members": [
-        { "name": "Reinaldo Valenzuela", "role": "Diseñador de redes", "text": "Experto en planificación detallada de redes FTTH." },
-        { "name": "Reynaldo Leroux", "role": "Desarrollador de software", "text": "Especialista en desarrollo de aplicaciones para smartphones." },
-        { "name": "Sebastian Leroux", "role": "Especialista en publicidad digital", "text": "Creativo en diseño gráfico y estrategias de publicidad en línea." }
+        {
+          "name": "Reinaldo Valenzuela",
+          "role": "Diseñador de redes",
+          "text": "Experto en planificación detallada de redes FTTH."
+        },
+        {
+          "name": "Reynaldo Leroux",
+          "role": "Desarrollador de software",
+          "text": "Especialista en desarrollo de aplicaciones para smartphones."
+        },
+        {
+          "name": "Sebastian Leroux",
+          "role": "Especialista en publicidad digital",
+          "text": "Creativo en diseño gráfico y estrategias de publicidad en línea."
+        }
       ]
     },
     "faq": {
       "eyebrow": "F.A.Q.",
       "title": "Preguntas frecuentes",
       "items": [
-        { "q": "¿Qué servicios ofrecen?", "a": "Ofrecemos servicios de consultoría informática, planificación detallada de redes FTTH, diseño de redes informáticas y desarrollo de software para smartphones." },
-        { "q": "¿Pueden ayudarme a mejorar mi rendimiento tecnológico?", "a": "Sí, nuestro equipo de expertos en tecnología puede analizar tu situación actual y ofrecerte soluciones y mejoras para optimizar tu rendimiento tecnológico." },
-        { "q": "¿Trabajan con clientes internacionales?", "a": "Sí, tenemos experiencia trabajando con clientes de diferentes partes del mundo y nos adaptamos a las necesidades y requerimientos de cada uno." },
-        { "q": "¿Cómo puedo contactarlos?", "a": "Puedes contactarnos a través de nuestro formulario de contacto en la página o enviándonos un correo electrónico. También puedes encontrarnos en nuestras redes sociales." }
+        {
+          "q": "¿Qué servicios ofrecen?",
+          "a": "Ofrecemos servicios de consultoría informática, planificación detallada de redes FTTH, diseño de redes informáticas y desarrollo de software para smartphones."
+        },
+        {
+          "q": "¿Pueden ayudarme a mejorar mi rendimiento tecnológico?",
+          "a": "Sí, nuestro equipo de expertos en tecnología puede analizar tu situación actual y ofrecerte soluciones y mejoras para optimizar tu rendimiento tecnológico."
+        },
+        {
+          "q": "¿Trabajan con clientes internacionales?",
+          "a": "Sí, tenemos experiencia trabajando con clientes de diferentes partes del mundo y nos adaptamos a las necesidades y requerimientos de cada uno."
+        },
+        {
+          "q": "¿Cómo puedo contactarlos?",
+          "a": "Puedes contactarnos a través de nuestro formulario de contacto en la página o enviándonos un correo electrónico. También puedes encontrarnos en nuestras redes sociales."
+        }
       ]
     },
     "contact": {
@@ -59,10 +118,31 @@
       "title": "¿Hablamos de tu proyecto?",
       "lead": "Cuéntanos qué necesitas y te ayudaremos a planificar la solución adecuada.",
       "items": [
-        { "label": "Email", "value_html": "<em class=\"todo\">Pendiente</em>" },
-        { "label": "Teléfono", "value_html": "<em class=\"todo\">Pendiente</em>" },
-        { "label": "Ubicación", "value_html": "<em class=\"todo\">Pendiente</em>" }
+        {
+          "label": "Email",
+          "value_html": "<em class=\"todo\">Pendiente</em>"
+        },
+        {
+          "label": "Teléfono",
+          "value_html": "<em class=\"todo\">Pendiente</em>"
+        },
+        {
+          "label": "Ubicación",
+          "value_html": "<em class=\"todo\">Pendiente</em>"
+        }
       ]
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "phone": "Teléfono",
+      "optional": "opcional",
+      "message": "Mensaje",
+      "send": "Enviar mensaje",
+      "sending": "Enviando…",
+      "ok": "¡Gracias! Recibimos tu mensaje y te responderemos pronto.",
+      "error": "No se pudo enviar el mensaje. Inténtalo de nuevo o escríbenos por email.",
+      "subject": "Nuevo mensaje desde lerouxconsultancy.com"
     }
   },
   "en": {
@@ -70,7 +150,13 @@
       "title": "Leroux Consultancy — Computer network and FTTH design",
       "description": "IT consulting, detailed FTTH network planning, smartphone software development and digital marketing for businesses and individuals."
     },
-    "nav": { "label": "Main menu", "services": "Services", "about": "About us", "team": "Team", "contact": "Contact" },
+    "nav": {
+      "label": "Main menu",
+      "services": "Services",
+      "about": "About us",
+      "team": "Team",
+      "contact": "Contact"
+    },
     "hero": {
       "eyebrow": "Get the best computer network design",
       "title": "Computer Network Services",
@@ -83,10 +169,26 @@
       "title": "Computer Network Design Services",
       "lead": "We work together with our clients to plan and design high-quality computer networks that fit their needs and budget.",
       "items": [
-        { "icon": "laptop", "title": "IT consulting", "text": "We provide personalised IT consulting to meet your business needs." },
-        { "icon": "fiber", "title": "Detailed FTTH network planning", "text": "We offer detailed FTTH network planning to ensure a fast and stable connection." },
-        { "icon": "phone", "title": "Smartphone software development", "text": "Our team of experts develops software for smartphones, delivering innovative and efficient solutions." },
-        { "icon": "megaphone", "title": "Digital marketing and technical support", "text": "Make your business stand out with our digital marketing, backed by specialised technical support to solve any problem." }
+        {
+          "icon": "laptop",
+          "title": "IT consulting",
+          "text": "We provide personalised IT consulting to meet your business needs."
+        },
+        {
+          "icon": "fiber",
+          "title": "Detailed FTTH network planning",
+          "text": "We offer detailed FTTH network planning to ensure a fast and stable connection."
+        },
+        {
+          "icon": "phone",
+          "title": "Smartphone software development",
+          "text": "Our team of experts develops software for smartphones, delivering innovative and efficient solutions."
+        },
+        {
+          "icon": "megaphone",
+          "title": "Digital marketing and technical support",
+          "text": "Make your business stand out with our digital marketing, backed by specialised technical support to solve any problem."
+        }
       ]
     },
     "about": {
@@ -94,10 +196,22 @@
       "title": "We are a company specialising in IT consulting and network design for businesses and individuals.",
       "lead": "Our team of technology and computer network experts provides consulting and detailed FTTH network planning for businesses and individuals.",
       "features": [
-        { "title": "Specialised services", "text": "We offer a wide range of services to help businesses and individuals improve their IT infrastructure." },
-        { "title": "Digital marketing and graphic design", "text": "Alongside our network services, we also offer digital marketing and graphic design to help businesses promote their brands and strengthen their online presence." },
-        { "title": "Technical support", "text": "Our technical support team is always available to help and solve any problem related to technology and computer networks." },
-        { "title": "Trust and quality", "text": "At Leroux Consultancy, we believe in building relationships of trust and delivering high-quality services to our clients." }
+        {
+          "title": "Specialised services",
+          "text": "We offer a wide range of services to help businesses and individuals improve their IT infrastructure."
+        },
+        {
+          "title": "Digital marketing and graphic design",
+          "text": "Alongside our network services, we also offer digital marketing and graphic design to help businesses promote their brands and strengthen their online presence."
+        },
+        {
+          "title": "Technical support",
+          "text": "Our technical support team is always available to help and solve any problem related to technology and computer networks."
+        },
+        {
+          "title": "Trust and quality",
+          "text": "At Leroux Consultancy, we believe in building relationships of trust and delivering high-quality services to our clients."
+        }
       ]
     },
     "team": {
@@ -105,19 +219,43 @@
       "title": "Meet our team",
       "lead": "Experts in network design, software development and digital marketing, ready to bring you the best technology solution.",
       "members": [
-        { "name": "Reinaldo Valenzuela", "role": "Network designer", "text": "Expert in detailed FTTH network planning." },
-        { "name": "Reynaldo Leroux", "role": "Software developer", "text": "Specialist in smartphone app development." },
-        { "name": "Sebastian Leroux", "role": "Digital marketing specialist", "text": "Creative in graphic design and online advertising strategy." }
+        {
+          "name": "Reinaldo Valenzuela",
+          "role": "Network designer",
+          "text": "Expert in detailed FTTH network planning."
+        },
+        {
+          "name": "Reynaldo Leroux",
+          "role": "Software developer",
+          "text": "Specialist in smartphone app development."
+        },
+        {
+          "name": "Sebastian Leroux",
+          "role": "Digital marketing specialist",
+          "text": "Creative in graphic design and online advertising strategy."
+        }
       ]
     },
     "faq": {
       "eyebrow": "F.A.Q.",
       "title": "Frequently asked questions",
       "items": [
-        { "q": "What services do you offer?", "a": "We offer IT consulting, detailed FTTH network planning, computer network design and software development for smartphones." },
-        { "q": "Can you help me improve my technology performance?", "a": "Yes, our team of technology experts can analyse your current situation and offer solutions and improvements to optimise your technology performance." },
-        { "q": "Do you work with international clients?", "a": "Yes, we have experience working with clients from different parts of the world and adapt to each one's needs and requirements." },
-        { "q": "How can I contact you?", "a": "You can contact us through the contact form on this page or by sending us an email. You can also find us on our social media." }
+        {
+          "q": "What services do you offer?",
+          "a": "We offer IT consulting, detailed FTTH network planning, computer network design and software development for smartphones."
+        },
+        {
+          "q": "Can you help me improve my technology performance?",
+          "a": "Yes, our team of technology experts can analyse your current situation and offer solutions and improvements to optimise your technology performance."
+        },
+        {
+          "q": "Do you work with international clients?",
+          "a": "Yes, we have experience working with clients from different parts of the world and adapt to each one's needs and requirements."
+        },
+        {
+          "q": "How can I contact you?",
+          "a": "You can contact us through the contact form on this page or by sending us an email. You can also find us on our social media."
+        }
       ]
     },
     "contact": {
@@ -125,10 +263,31 @@
       "title": "Shall we talk about your project?",
       "lead": "Tell us what you need and we will help you plan the right solution.",
       "items": [
-        { "label": "Email", "value_html": "<em class=\"todo\">Pending</em>" },
-        { "label": "Phone", "value_html": "<em class=\"todo\">Pending</em>" },
-        { "label": "Location", "value_html": "<em class=\"todo\">Pending</em>" }
+        {
+          "label": "Email",
+          "value_html": "<em class=\"todo\">Pending</em>"
+        },
+        {
+          "label": "Phone",
+          "value_html": "<em class=\"todo\">Pending</em>"
+        },
+        {
+          "label": "Location",
+          "value_html": "<em class=\"todo\">Pending</em>"
+        }
       ]
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "optional": "optional",
+      "message": "Message",
+      "send": "Send message",
+      "sending": "Sending…",
+      "ok": "Thank you! We received your message and will get back to you soon.",
+      "error": "Your message could not be sent. Please try again or email us.",
+      "subject": "New message from lerouxconsultancy.com"
     }
   },
   "sv": {
@@ -136,7 +295,13 @@
       "title": "Leroux Consultancy — Design av datornätverk och FTTH",
       "description": "IT-konsultation, detaljerad planering av FTTH-nät, mjukvaruutveckling för smartphones och digital marknadsföring för företag och privatpersoner."
     },
-    "nav": { "label": "Huvudmeny", "services": "Tjänster", "about": "Om oss", "team": "Team", "contact": "Kontakt" },
+    "nav": {
+      "label": "Huvudmeny",
+      "services": "Tjänster",
+      "about": "Om oss",
+      "team": "Team",
+      "contact": "Kontakt"
+    },
     "hero": {
       "eyebrow": "Få den bästa designen av datornätverk",
       "title": "Tjänster inom datornätverk",
@@ -149,10 +314,26 @@
       "title": "Design av datornätverk",
       "lead": "Vi arbetar tillsammans med våra kunder för att planera och designa datornätverk av hög kvalitet som passar deras behov och budget.",
       "items": [
-        { "icon": "laptop", "title": "IT-konsultation", "text": "Vi erbjuder personlig IT-konsultation anpassad efter ditt företags behov." },
-        { "icon": "fiber", "title": "Detaljerad planering av FTTH-nät", "text": "Vi erbjuder detaljerad planering av FTTH-nät för en snabb och stabil uppkoppling." },
-        { "icon": "phone", "title": "Mjukvaruutveckling för smartphones", "text": "Vårt team av experter utvecklar mjukvara för smartphones med innovativa och effektiva lösningar." },
-        { "icon": "megaphone", "title": "Digital marknadsföring och teknisk support", "text": "Lyft fram ditt företag med vår digitala marknadsföring och få hjälp av vår specialiserade tekniska support för att lösa alla problem." }
+        {
+          "icon": "laptop",
+          "title": "IT-konsultation",
+          "text": "Vi erbjuder personlig IT-konsultation anpassad efter ditt företags behov."
+        },
+        {
+          "icon": "fiber",
+          "title": "Detaljerad planering av FTTH-nät",
+          "text": "Vi erbjuder detaljerad planering av FTTH-nät för en snabb och stabil uppkoppling."
+        },
+        {
+          "icon": "phone",
+          "title": "Mjukvaruutveckling för smartphones",
+          "text": "Vårt team av experter utvecklar mjukvara för smartphones med innovativa och effektiva lösningar."
+        },
+        {
+          "icon": "megaphone",
+          "title": "Digital marknadsföring och teknisk support",
+          "text": "Lyft fram ditt företag med vår digitala marknadsföring och få hjälp av vår specialiserade tekniska support för att lösa alla problem."
+        }
       ]
     },
     "about": {
@@ -160,10 +341,22 @@
       "title": "Vi är ett företag specialiserat på IT-konsultation och nätverksdesign för företag och privatpersoner.",
       "lead": "Vårt team av experter inom teknik och datornätverk erbjuder konsulttjänster och detaljerad planering av FTTH-nät för företag och privatpersoner.",
       "features": [
-        { "title": "Specialiserade tjänster", "text": "Vi erbjuder ett brett utbud av tjänster som hjälper företag och privatpersoner att förbättra sin IT-infrastruktur." },
-        { "title": "Digital marknadsföring och grafisk design", "text": "Utöver våra nätverkstjänster erbjuder vi även digital marknadsföring och grafisk design som hjälper företag att marknadsföra sina varumärken och stärka sin närvaro online." },
-        { "title": "Teknisk support", "text": "Vårt supportteam finns alltid tillgängligt för att hjälpa till och lösa alla problem med teknik och datornätverk." },
-        { "title": "Förtroende och kvalitet", "text": "På Leroux Consultancy tror vi på att bygga förtroendefulla relationer och leverera tjänster av hög kvalitet till våra kunder." }
+        {
+          "title": "Specialiserade tjänster",
+          "text": "Vi erbjuder ett brett utbud av tjänster som hjälper företag och privatpersoner att förbättra sin IT-infrastruktur."
+        },
+        {
+          "title": "Digital marknadsföring och grafisk design",
+          "text": "Utöver våra nätverkstjänster erbjuder vi även digital marknadsföring och grafisk design som hjälper företag att marknadsföra sina varumärken och stärka sin närvaro online."
+        },
+        {
+          "title": "Teknisk support",
+          "text": "Vårt supportteam finns alltid tillgängligt för att hjälpa till och lösa alla problem med teknik och datornätverk."
+        },
+        {
+          "title": "Förtroende och kvalitet",
+          "text": "På Leroux Consultancy tror vi på att bygga förtroendefulla relationer och leverera tjänster av hög kvalitet till våra kunder."
+        }
       ]
     },
     "team": {
@@ -171,19 +364,43 @@
       "title": "Möt vårt team",
       "lead": "Experter inom nätverksdesign, mjukvaruutveckling och digital marknadsföring, redo att ge dig den bästa tekniska lösningen.",
       "members": [
-        { "name": "Reinaldo Valenzuela", "role": "Nätverksdesigner", "text": "Expert på detaljerad planering av FTTH-nät." },
-        { "name": "Reynaldo Leroux", "role": "Mjukvaruutvecklare", "text": "Specialist på apputveckling för smartphones." },
-        { "name": "Sebastian Leroux", "role": "Specialist på digital marknadsföring", "text": "Kreativ inom grafisk design och strategier för annonsering online." }
+        {
+          "name": "Reinaldo Valenzuela",
+          "role": "Nätverksdesigner",
+          "text": "Expert på detaljerad planering av FTTH-nät."
+        },
+        {
+          "name": "Reynaldo Leroux",
+          "role": "Mjukvaruutvecklare",
+          "text": "Specialist på apputveckling för smartphones."
+        },
+        {
+          "name": "Sebastian Leroux",
+          "role": "Specialist på digital marknadsföring",
+          "text": "Kreativ inom grafisk design och strategier för annonsering online."
+        }
       ]
     },
     "faq": {
       "eyebrow": "F.A.Q.",
       "title": "Vanliga frågor",
       "items": [
-        { "q": "Vilka tjänster erbjuder ni?", "a": "Vi erbjuder IT-konsultation, detaljerad planering av FTTH-nät, design av datornätverk och mjukvaruutveckling för smartphones." },
-        { "q": "Kan ni hjälpa mig att förbättra min tekniska prestanda?", "a": "Ja, vårt team av teknikexperter kan analysera din nuvarande situation och föreslå lösningar och förbättringar för att optimera din tekniska prestanda." },
-        { "q": "Arbetar ni med internationella kunder?", "a": "Ja, vi har erfarenhet av att arbeta med kunder från olika delar av världen och anpassar oss efter varje kunds behov och krav." },
-        { "q": "Hur kontaktar jag er?", "a": "Du kan kontakta oss via kontaktformuläret på sidan eller genom att skicka ett e-postmeddelande. Du hittar oss även i sociala medier." }
+        {
+          "q": "Vilka tjänster erbjuder ni?",
+          "a": "Vi erbjuder IT-konsultation, detaljerad planering av FTTH-nät, design av datornätverk och mjukvaruutveckling för smartphones."
+        },
+        {
+          "q": "Kan ni hjälpa mig att förbättra min tekniska prestanda?",
+          "a": "Ja, vårt team av teknikexperter kan analysera din nuvarande situation och föreslå lösningar och förbättringar för att optimera din tekniska prestanda."
+        },
+        {
+          "q": "Arbetar ni med internationella kunder?",
+          "a": "Ja, vi har erfarenhet av att arbeta med kunder från olika delar av världen och anpassar oss efter varje kunds behov och krav."
+        },
+        {
+          "q": "Hur kontaktar jag er?",
+          "a": "Du kan kontakta oss via kontaktformuläret på sidan eller genom att skicka ett e-postmeddelande. Du hittar oss även i sociala medier."
+        }
       ]
     },
     "contact": {
@@ -191,10 +408,31 @@
       "title": "Ska vi prata om ditt projekt?",
       "lead": "Berätta vad du behöver så hjälper vi dig att planera rätt lösning.",
       "items": [
-        { "label": "E-post", "value_html": "<em class=\"todo\">Saknas</em>" },
-        { "label": "Telefon", "value_html": "<em class=\"todo\">Saknas</em>" },
-        { "label": "Plats", "value_html": "<em class=\"todo\">Saknas</em>" }
+        {
+          "label": "E-post",
+          "value_html": "<em class=\"todo\">Saknas</em>"
+        },
+        {
+          "label": "Telefon",
+          "value_html": "<em class=\"todo\">Saknas</em>"
+        },
+        {
+          "label": "Plats",
+          "value_html": "<em class=\"todo\">Saknas</em>"
+        }
       ]
+    },
+    "form": {
+      "name": "Namn",
+      "email": "E-post",
+      "phone": "Telefon",
+      "optional": "valfritt",
+      "message": "Meddelande",
+      "send": "Skicka meddelande",
+      "sending": "Skickar…",
+      "ok": "Tack! Vi har tagit emot ditt meddelande och återkommer snart.",
+      "error": "Meddelandet kunde inte skickas. Försök igen eller mejla oss.",
+      "subject": "Nytt meddelande från lerouxconsultancy.com"
     }
   }
 }

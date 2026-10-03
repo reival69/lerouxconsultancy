@@ -47,7 +47,7 @@ def icon(name: str) -> str:
     )
 
 
-def page(lang: str, t: dict, all_langs: dict) -> str:
+def page(lang: str, t: dict, form_key: str) -> str:
     prefix = "../" if LANGS[lang] else ""
     switcher = "".join(
         f'<a href="{prefix}{LANGS[code]}" hreflang="{code}" lang="{code}"'
@@ -81,6 +81,7 @@ def page(lang: str, t: dict, all_langs: dict) -> str:
         f'<details class="faq-item"><summary>{esc(q["q"])}</summary><p>{esc(q["a"])}</p></details>'
         for q in t["faq"]["items"]
     )
+    f = t["form"]
     contact_items = "".join(
         f'<li><span>{esc(c["label"])}</span>{c["value_html"]}</li>' for c in t["contact"]["items"]
     )
@@ -171,8 +172,18 @@ def page(lang: str, t: dict, all_langs: dict) -> str:
         <p class="eyebrow">{esc(t["contact"]["eyebrow"])}</p>
         <h2>{esc(t["contact"]["title"])}</h2>
         <p class="section-lead">{esc(t["contact"]["lead"])}</p>
+        <ul class="contact-list">{contact_items}</ul>
       </div>
-      <ul class="contact-list">{contact_items}</ul>
+      <form class="contact-form" id="contact-form" data-key="{esc(form_key)}" data-ok="{esc(f["ok"])}" data-error="{esc(f["error"])}" data-sending="{esc(f["sending"])}" novalidate>
+        <input type="hidden" name="subject" value="{esc(f["subject"])}">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>{esc(f["name"])}<input name="name" autocomplete="name" required></label>
+        <label>{esc(f["email"])}<input name="email" type="email" autocomplete="email" required></label>
+        <label><span>{esc(f["phone"])} <small>({esc(f["optional"])})</small></span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>{esc(f["message"])}<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">{esc(f["send"])}</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 </main>
@@ -183,7 +194,7 @@ def page(lang: str, t: dict, all_langs: dict) -> str:
     <div class="lang">{switcher}</div>
   </div>
 </footer>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="{prefix}assets/site.js" defer></script>
 </body>
 </html>
 """
@@ -194,7 +205,7 @@ def main() -> None:
     for lang, folder in LANGS.items():
         out = ROOT / folder / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(page(lang, content[lang], content), encoding="utf-8")
+        out.write_text(page(lang, content[lang], content.get("form_key", "")), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
 
 

@@ -100,8 +100,18 @@
         <p class="eyebrow">Contact</p>
         <h2>Shall we talk about your project?</h2>
         <p class="section-lead">Tell us what you need and we will help you plan the right solution.</p>
+        <ul class="contact-list"><li><span>Email</span><em class="todo">Pending</em></li><li><span>Phone</span><em class="todo">Pending</em></li><li><span>Location</span><em class="todo">Pending</em></li></ul>
       </div>
-      <ul class="contact-list"><li><span>Email</span><em class="todo">Pending</em></li><li><span>Phone</span><em class="todo">Pending</em></li><li><span>Location</span><em class="todo">Pending</em></li></ul>
+      <form class="contact-form" id="contact-form" data-key="" data-ok="Thank you! We received your message and will get back to you soon." data-error="Your message could not be sent. Please try again or email us." data-sending="Sending…" novalidate>
+        <input type="hidden" name="subject" value="New message from lerouxconsultancy.com">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Phone <small>(optional)</small></span><input name="phone" type="tel" autocomplete="tel"></label>
+        <label>Message<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 </main>
@@ -112,6 +122,6 @@
     <div class="lang"><a href="../" hreflang="es" lang="es">ES</a><a href="../en/" hreflang="en" lang="en" aria-current="true">EN</a><a href="../sv/" hreflang="sv" lang="sv">SV</a></div>
   </div>
 </footer>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="../assets/site.js" defer></script>
 </body>
 </html>
