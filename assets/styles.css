@@ -118,9 +118,6 @@ h3 { font-size: 21px; font-weight: 700; }
 .form-status.error { color: #c0261b; font-weight: 600; }
 
 .brand { color: var(--text); }
-.wordmark { display: inline-grid; line-height: 1; }
-.wm-top { display: inline-flex; align-items: center; font: 800 26px/1 var(--head); letter-spacing: .5px; }
-.wm-x { width: .78em; height: .78em; margin-left: .04em; }
-.wm-sub { font: 700 9.5px/1 var(--body); letter-spacing: 3.4px; color: var(--accent); margin-top: 4px; }
+.wordmark { display: block; height: 54px; width: auto; margin-left: -7px; }
 .footer-brand { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
 .site-footer .wordmark { color: #fff; }
