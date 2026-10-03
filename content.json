@@ -78,17 +78,20 @@
         {
           "name": "Reinaldo Valenzuela",
           "role": "Diseñador de redes",
-          "text": "Experto en planificación detallada de redes FTTH."
+          "text": "Experto en planificación detallada de redes FTTH.",
+          "photo": "assets/team/reinaldo-valenzuela.jpg"
         },
         {
           "name": "Reynaldo Leroux",
           "role": "Desarrollador de software",
-          "text": "Especialista en desarrollo de aplicaciones para smartphones."
+          "text": "Especialista en desarrollo de aplicaciones para smartphones.",
+          "photo": "assets/team/reynaldo-leroux.jpg"
         },
         {
           "name": "Sebastian Leroux",
           "role": "Especialista en publicidad digital",
-          "text": "Creativo en diseño gráfico y estrategias de publicidad en línea."
+          "text": "Creativo en diseño gráfico y estrategias de publicidad en línea.",
+          "photo": "assets/team/sebastian-leroux.jpg"
         }
       ]
     },
@@ -246,17 +249,20 @@
         {
           "name": "Reinaldo Valenzuela",
           "role": "Network designer",
-          "text": "Expert in detailed FTTH network planning."
+          "text": "Expert in detailed FTTH network planning.",
+          "photo": "assets/team/reinaldo-valenzuela.jpg"
         },
         {
           "name": "Reynaldo Leroux",
           "role": "Software developer",
-          "text": "Specialist in smartphone app development."
+          "text": "Specialist in smartphone app development.",
+          "photo": "assets/team/reynaldo-leroux.jpg"
         },
         {
           "name": "Sebastian Leroux",
           "role": "Digital marketing specialist",
-          "text": "Creative in graphic design and online advertising strategy."
+          "text": "Creative in graphic design and online advertising strategy.",
+          "photo": "assets/team/sebastian-leroux.jpg"
         }
       ]
     },
@@ -414,17 +420,20 @@
         {
           "name": "Reinaldo Valenzuela",
           "role": "Nätverksdesigner",
-          "text": "Expert på detaljerad planering av FTTH-nät."
+          "text": "Expert på detaljerad planering av FTTH-nät.",
+          "photo": "assets/team/reinaldo-valenzuela.jpg"
         },
         {
           "name": "Reynaldo Leroux",
           "role": "Mjukvaruutvecklare",
-          "text": "Specialist på apputveckling för smartphones."
+          "text": "Specialist på apputveckling för smartphones.",
+          "photo": "assets/team/reynaldo-leroux.jpg"
         },
         {
           "name": "Sebastian Leroux",
           "role": "Specialist på digital marknadsföring",
-          "text": "Kreativ inom grafisk design och strategier för annonsering online."
+          "text": "Kreativ inom grafisk design och strategier för annonsering online.",
+          "photo": "assets/team/sebastian-leroux.jpg"
         }
       ]
     },
