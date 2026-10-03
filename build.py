@@ -36,6 +36,16 @@ HERO_ART = """<svg viewBox="0 0 480 360" role="img" aria-hidden="true" class="he
 </svg>"""
 
 
+WORDMARK = (
+    '<span class="wordmark" aria-hidden="true"><span class="wm-top">LEROU'
+    '<svg class="wm-x" viewBox="120 120 272 272"><path d="M150 150 L362 362 M362 150 L150 362" '
+    'stroke="#ff4a1c" stroke-width="48" stroke-linecap="round"/><g fill="currentColor">'
+    '<circle cx="150" cy="150" r="26"/><circle cx="362" cy="150" r="26"/>'
+    '<circle cx="150" cy="362" r="26"/><circle cx="362" cy="362" r="26"/></g></svg>'
+    '</span><span class="wm-sub">CONSULTANCY</span></span>'
+)
+
+
 def esc(text: str) -> str:
     return html.escape(text, quote=True)
 
@@ -94,6 +104,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
 <meta name="description" content="{esc(t["meta"]["description"])}">
 {alternates}
 <link rel="icon" href="{prefix}assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
@@ -102,7 +113,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
 <body>
 <header class="site-header">
   <div class="wrap header-row">
-    <a class="brand" href="{prefix}{LANGS[lang]}"><img src="{prefix}assets/logo.svg" alt="" width="34" height="34"><span>Leroux <b>Consultancy</b></span></a>
+    <a class="brand" href="{prefix}{LANGS[lang]}" aria-label="Leroux Consultancy">{WORDMARK}</a>
     <nav class="nav" aria-label="{esc(t["nav"]["label"])}">
       <a href="#servicios">{esc(t["nav"]["services"])}</a>
       <a href="#nosotros">{esc(t["nav"]["about"])}</a>
@@ -190,7 +201,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
 
 <footer class="site-footer">
   <div class="wrap footer-row">
-    <span>© <span id="year">2026</span> Leroux Consultancy</span>
+    <div class="footer-brand">{WORDMARK}<span>© <span id="year">2026</span> Leroux Consultancy</span></div>
     <div class="lang">{switcher}</div>
   </div>
 </footer>
