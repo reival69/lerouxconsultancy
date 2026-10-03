@@ -18,7 +18,8 @@
       "title": "Servicios de Redes Informáticas",
       "lead": "En Leroux Consultancy, estamos comprometidos a ofrecer servicios de alta calidad de diseño de redes informáticas en todo el mundo. Confía en nosotros para obtener una planificación detallada y personalizada para tu empresa.",
       "cta": "Contáctanos",
-      "secondary": "Ver servicios"
+      "secondary": "Ver servicios",
+      "image_alt": "Red informática conectada: un globo central unido a computadoras, servidores y dispositivos"
     },
     "services": {
       "eyebrow": "Servicios",
@@ -189,7 +190,8 @@
       "title": "Computer Network Services",
       "lead": "At Leroux Consultancy, we are committed to delivering high-quality computer network design services worldwide. Trust us for detailed, tailored planning for your business.",
       "cta": "Contact us",
-      "secondary": "See services"
+      "secondary": "See services",
+      "image_alt": "Connected computer network: a central globe linked to computers, servers and devices"
     },
     "services": {
       "eyebrow": "Services",
@@ -360,7 +362,8 @@
       "title": "Tjänster inom datornätverk",
       "lead": "På Leroux Consultancy erbjuder vi design av datornätverk med hög kvalitet över hela världen. Lita på oss för en detaljerad och skräddarsydd planering för ditt företag.",
       "cta": "Kontakta oss",
-      "secondary": "Se tjänster"
+      "secondary": "Se tjänster",
+      "image_alt": "Uppkopplat datornätverk: en jordglob i mitten kopplad till datorer, servrar och enheter"
     },
     "services": {
       "eyebrow": "Tjänster",

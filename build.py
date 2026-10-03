@@ -138,7 +138,10 @@ def page(lang: str, t: dict, form_key: str) -> str:
           <a class="btn btn-ghost" href="#servicios">{esc(t["hero"]["secondary"])}</a>
         </div>
       </div>
-      {HERO_ART}
+      <picture class="hero-photo">
+        <source srcset="{prefix}assets/hero-redes.webp" type="image/webp">
+        <img src="{prefix}assets/hero-redes.jpg" alt="{esc(t["hero"]["image_alt"])}" width="1200" height="900" fetchpriority="high">
+      </picture>
     </div>
   </section>
 
