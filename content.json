@@ -168,6 +168,13 @@
           "url": "https://es-basic.com",
           "label": "es-basic.com",
           "text": "App de fútbol para scouting: encuentra, evalúa y sigue a jugadores en un solo lugar. Disponible en español y portugués."
+        },
+        {
+          "name": "Garage",
+          "logo": "assets/garage.svg",
+          "url": "https://talleo.es",
+          "label": "talleo.es",
+          "text": "App para talleres mecánicos: órdenes de trabajo, presupuestos, facturas, citas online y seguimiento de la reparación para el cliente."
         }
       ]
     },
@@ -379,6 +386,13 @@
           "url": "https://es-basic.com",
           "label": "es-basic.com",
           "text": "Football scouting app: find, evaluate and follow players in one place. Available in Spanish and Portuguese."
+        },
+        {
+          "name": "Garage",
+          "logo": "assets/garage.svg",
+          "url": "https://talleo.es",
+          "label": "talleo.es",
+          "text": "App for car repair shops: work orders, quotes, invoices, online booking and repair tracking for the customer."
         }
       ]
     },
@@ -590,6 +604,13 @@
           "url": "https://es-basic.com",
           "label": "es-basic.com",
           "text": "Fotbollsapp för scouting: hitta, utvärdera och följ spelare på ett ställe. Finns på spanska och portugisiska."
+        },
+        {
+          "name": "Garage",
+          "logo": "assets/garage.svg",
+          "url": "https://talleo.es",
+          "label": "talleo.es",
+          "text": "App för bilverkstäder: arbetsordrar, offerter, fakturor, onlinebokning och reparationsuppföljning för kunden."
         }
       ]
     },
