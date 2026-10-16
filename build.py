@@ -65,8 +65,32 @@ def icon(name: str) -> str:
     )
 
 
-def page(lang: str, t: dict, form_key: str) -> str:
+def contact_items(t: dict, company: dict) -> str:
+    labels = t["contact"]["labels"]
+    pending = f'<em class="todo">{esc(labels["pending"])}</em>'
+    email = company.get("email", "")
+    phone = company.get("phone", "")
+    values = [
+        ("email", f'<a href="mailto:{esc(email)}">{esc(email)}</a>' if email else pending),
+        ("phone", f'<a href="tel:{esc(phone.replace(" ", ""))}">{esc(phone)}</a>' if phone else pending),
+        ("location", esc(company.get("city", "")) or pending),
+    ]
+    return "".join(f"<li><span>{esc(labels[key])}</span>{value}</li>" for key, value in values)
+
+
+def legal_text(text: str, company: dict) -> str:
+    """Escapes a legal paragraph and fills in the company data."""
+    email = company.get("email", "")
+    out = esc(text)
+    for key in ("name", "cif", "address"):
+        out = out.replace("{" + key + "}", esc(company[key]))
+    return out.replace("{email}", f'<a href="mailto:{esc(email)}">{esc(email)}</a>')
+
+
+def page(lang: str, t: dict, form_key: str, company: dict) -> str:
     prefix = "../" if LANGS[lang] else ""
+    legal = t["legal"]
+    legal_href = prefix + legal["slug"]
     switcher = "".join(
         f'<a href="{prefix}{LANGS[code]}" hreflang="{code}" lang="{code}"'
         f'{CURRENT if code == lang else ""}>{code.upper()}</a>'
@@ -108,8 +132,8 @@ def page(lang: str, t: dict, form_key: str) -> str:
         for q in t["faq"]["items"]
     )
     f = t["form"]
-    contact_items = "".join(
-        f'<li><span>{esc(c["label"])}</span>{c["value_html"]}</li>' for c in t["contact"]["items"]
+    consent = esc(legal["consent"]).replace(
+        "{link}", f'<a href="{legal_href}">{esc(legal["consent_link"])}</a>'
     )
     return f"""<!doctype html>
 <html lang="{lang}">
@@ -212,7 +236,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
         <p class="eyebrow">{esc(t["contact"]["eyebrow"])}</p>
         <h2>{esc(t["contact"]["title"])}</h2>
         <p class="section-lead">{esc(t["contact"]["lead"])}</p>
-        <ul class="contact-list">{contact_items}</ul>
+        <ul class="contact-list">{contact_items(t, company)}</ul>
       </div>
       <form class="contact-form" id="contact-form" data-key="{esc(form_key)}" data-ok="{esc(f["ok"])}" data-error="{esc(f["error"])}" data-sending="{esc(f["sending"])}" novalidate>
         <input type="hidden" name="subject" value="{esc(f["subject"])}">
@@ -221,6 +245,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
         <label>{esc(f["email"])}<input name="email" type="email" autocomplete="email" required></label>
         <label><span>{esc(f["phone"])} <small>({esc(f["optional"])})</small></span><input name="phone" type="tel" autocomplete="tel"></label>
         <label>{esc(f["message"])}<textarea name="message" rows="5" required></textarea></label>
+        <p class="form-consent">{consent}</p>
         <button class="btn btn-primary" type="submit">{esc(f["send"])}</button>
         <p class="form-status" role="status" aria-live="polite"></p>
       </form>
@@ -231,6 +256,7 @@ def page(lang: str, t: dict, form_key: str) -> str:
 <footer class="site-footer">
   <div class="wrap footer-row">
     <div class="footer-brand">{WORDMARK}<span>© <span id="year">2026</span> Leroux Consultancy</span></div>
+    <a class="footer-link" href="{legal_href}">{esc(legal["link"])}</a>
     <div class="lang">{switcher}</div>
   </div>
 </footer>
@@ -240,13 +266,70 @@ def page(lang: str, t: dict, form_key: str) -> str:
 """
 
 
+def legal_page(lang: str, content: dict) -> str:
+    t = content[lang]
+    company = content["company"]
+    legal = t["legal"]
+    prefix = "../" * legal["slug"].count("/")
+    switcher = "".join(
+        f'<a href="{prefix}{content[code]["legal"]["slug"]}" hreflang="{code}" lang="{code}"'
+        f'{CURRENT if code == lang else ""}>{code.upper()}</a>'
+        for code in LANGS
+    )
+    sections = "".join(
+        f"<h2>{esc(title)}</h2><p>{legal_text(text, company)}</p>" for title, text in legal["sections"]
+    )
+    return f"""<!doctype html>
+<html lang="{lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(legal["title"])} — Leroux Consultancy</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="{prefix}assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{prefix}assets/styles.css?v={ASSET_VERSION}">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="{prefix}{LANGS[lang]}" aria-label="Leroux Consultancy">{WORDMARK}</a>
+    <div class="lang" aria-label="Language">{switcher}</div>
+  </div>
+</header>
+<main class="section">
+  <article class="wrap legal">
+    <p><a href="{prefix}{LANGS[lang]}">{esc(legal["back"])}</a></p>
+    <h1>{esc(legal["title"])}</h1>
+    <p class="legal-updated">{esc(legal["updated"])}</p>
+    {sections}
+  </article>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-row">
+    <div class="footer-brand">{WORDMARK}<span>© 2026 Leroux Consultancy</span></div>
+    <div class="lang">{switcher}</div>
+  </div>
+</footer>
+</body>
+</html>
+"""
+
+
 def main() -> None:
     content = json.loads((ROOT / "content.json").read_text(encoding="utf-8"))
+    company = content["company"]
     for lang, folder in LANGS.items():
         out = ROOT / folder / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(page(lang, content[lang], content.get("form_key", "")), encoding="utf-8")
+        out.write_text(page(lang, content[lang], content.get("form_key", ""), company), encoding="utf-8")
         print("wrote", out.relative_to(ROOT))
+        legal_out = ROOT / content[lang]["legal"]["slug"] / "index.html"
+        legal_out.parent.mkdir(parents=True, exist_ok=True)
+        legal_out.write_text(legal_page(lang, content), encoding="utf-8")
+        print("wrote", legal_out.relative_to(ROOT))
 
 
 if __name__ == "__main__":

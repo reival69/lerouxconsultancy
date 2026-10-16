@@ -1,5 +1,13 @@
 {
   "form_key": "",
+  "company": {
+    "name": "Leroux Consultancy S.L.",
+    "cif": "B75585224",
+    "address": "Avda. de los Manantiales, 24, planta 9, puerta 16, 29620 Torremolinos (Málaga), España",
+    "city": "Torremolinos (Málaga)",
+    "email": "reinaldo@lerouxconsultancy.com",
+    "phone": ""
+  },
   "es": {
     "meta": {
       "title": "Leroux Consultancy — Diseño de redes informáticas y FTTH",
@@ -122,20 +130,12 @@
       "eyebrow": "Contacto",
       "title": "¿Hablamos de tu proyecto?",
       "lead": "Cuéntanos qué necesitas y te ayudaremos a planificar la solución adecuada.",
-      "items": [
-        {
-          "label": "Email",
-          "value_html": "<em class=\"todo\">Pendiente</em>"
-        },
-        {
-          "label": "Teléfono",
-          "value_html": "<em class=\"todo\">Pendiente</em>"
-        },
-        {
-          "label": "Ubicación",
-          "value_html": "<em class=\"todo\">Pendiente</em>"
-        }
-      ]
+      "labels": {
+        "email": "Email",
+        "phone": "Teléfono",
+        "location": "Ubicación",
+        "pending": "Pendiente"
+      }
     },
     "form": {
       "name": "Nombre",
@@ -169,6 +169,53 @@
           "label": "es-basic.com",
           "text": "App de fútbol para scouting: encuentra, evalúa y sigue a jugadores en un solo lugar. Disponible en español y portugués."
         }
+      ]
+    },
+    "legal": {
+      "slug": "privacidad/",
+      "link": "Política de privacidad y aviso legal",
+      "title": "Política de privacidad y aviso legal",
+      "back": "← Volver a la página principal",
+      "consent": "Al enviar el formulario aceptas nuestra {link}.",
+      "consent_link": "política de privacidad",
+      "updated": "Última actualización: octubre de 2026",
+      "sections": [
+        [
+          "Responsable y titular de la web",
+          "Esta web pertenece a {name}, con CIF {cif} y domicilio en {address}. Email de contacto: {email}."
+        ],
+        [
+          "Qué datos tratamos",
+          "Solo los que tú nos envías: tu nombre, email, teléfono (si lo indicas) y el mensaje del formulario de contacto, o los que nos mandes por email."
+        ],
+        [
+          "Para qué los usamos",
+          "Para responder a tu consulta y, si nos lo pides, preparar un presupuesto o prestarte nuestros servicios. No los usamos para enviarte publicidad sin tu permiso."
+        ],
+        [
+          "Base legal",
+          "Tu consentimiento al enviarnos el formulario y, si llegamos a trabajar juntos, la ejecución del contrato."
+        ],
+        [
+          "Cuánto tiempo los guardamos",
+          "El tiempo necesario para atender tu consulta. Si hay relación comercial, durante los plazos que exige la ley (por ejemplo, fiscales)."
+        ],
+        [
+          "Con quién los compartimos",
+          "No vendemos ni cedemos tus datos. Para que la web funcione usamos estos proveedores: Clouding.io (alojamiento de la web, en España), Web3Forms (entrega por email los mensajes del formulario) y Google Fonts (tipos de letra; tu navegador se conecta a Google para descargarlos). Solo comunicaremos datos a las autoridades cuando la ley lo exija."
+        ],
+        [
+          "Tus derechos",
+          "Puedes pedir el acceso, la rectificación o la supresión de tus datos, oponerte a su tratamiento, limitarlo o pedir su portabilidad, escribiendo a {email}. Si crees que no hemos atendido bien tu petición, puedes reclamar ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        ],
+        [
+          "Cookies",
+          "Esta web no usa cookies de publicidad ni de analítica, ni rastrea tu navegación."
+        ],
+        [
+          "Propiedad intelectual",
+          "Los textos, imágenes, logotipos y diseño de esta web pertenecen a {name} o se usan con permiso. No se pueden copiar sin autorización."
+        ]
       ]
     }
   },
@@ -294,20 +341,12 @@
       "eyebrow": "Contact",
       "title": "Shall we talk about your project?",
       "lead": "Tell us what you need and we will help you plan the right solution.",
-      "items": [
-        {
-          "label": "Email",
-          "value_html": "<em class=\"todo\">Pending</em>"
-        },
-        {
-          "label": "Phone",
-          "value_html": "<em class=\"todo\">Pending</em>"
-        },
-        {
-          "label": "Location",
-          "value_html": "<em class=\"todo\">Pending</em>"
-        }
-      ]
+      "labels": {
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Location",
+        "pending": "Pending"
+      }
     },
     "form": {
       "name": "Name",
@@ -341,6 +380,53 @@
           "label": "es-basic.com",
           "text": "Football scouting app: find, evaluate and follow players in one place. Available in Spanish and Portuguese."
         }
+      ]
+    },
+    "legal": {
+      "slug": "en/privacy/",
+      "link": "Privacy policy and legal notice",
+      "title": "Privacy policy and legal notice",
+      "back": "← Back to the home page",
+      "consent": "By sending the form you accept our {link}.",
+      "consent_link": "privacy policy",
+      "updated": "Last updated: October 2026",
+      "sections": [
+        [
+          "Controller and website owner",
+          "This website belongs to {name}, tax ID (CIF) {cif}, registered at {address}. Contact email: {email}."
+        ],
+        [
+          "What data we process",
+          "Only what you send us: your name, email, phone number (if you give it) and the message in the contact form, or what you send us by email."
+        ],
+        [
+          "Why we use it",
+          "To answer your enquiry and, if you ask us to, to prepare a quote or provide our services. We do not send you advertising without your permission."
+        ],
+        [
+          "Legal basis",
+          "Your consent when you send the form and, if we work together, the performance of the contract."
+        ],
+        [
+          "How long we keep it",
+          "As long as needed to deal with your enquiry. If there is a business relationship, for the periods required by law (for example, for tax purposes)."
+        ],
+        [
+          "Who we share it with",
+          "We do not sell or pass on your data. To run the website we use these providers: Clouding.io (website hosting, in Spain), Web3Forms (delivers the form messages by email) and Google Fonts (typefaces; your browser connects to Google to download them). We only disclose data to the authorities when the law requires it."
+        ],
+        [
+          "Your rights",
+          "You can ask to access, correct or delete your data, object to or restrict its processing, or request its portability by writing to {email}. If you think we have not handled your request properly, you can complain to the Spanish Data Protection Agency (www.aepd.es)."
+        ],
+        [
+          "Cookies",
+          "This website does not use advertising or analytics cookies and does not track your browsing."
+        ],
+        [
+          "Intellectual property",
+          "The texts, images, logos and design of this website belong to {name} or are used with permission. They may not be copied without authorisation."
+        ]
       ]
     }
   },
@@ -466,20 +552,12 @@
       "eyebrow": "Kontakt",
       "title": "Ska vi prata om ditt projekt?",
       "lead": "Berätta vad du behöver så hjälper vi dig att planera rätt lösning.",
-      "items": [
-        {
-          "label": "E-post",
-          "value_html": "<em class=\"todo\">Saknas</em>"
-        },
-        {
-          "label": "Telefon",
-          "value_html": "<em class=\"todo\">Saknas</em>"
-        },
-        {
-          "label": "Plats",
-          "value_html": "<em class=\"todo\">Saknas</em>"
-        }
-      ]
+      "labels": {
+        "email": "E-post",
+        "phone": "Telefon",
+        "location": "Plats",
+        "pending": "Saknas"
+      }
     },
     "form": {
       "name": "Namn",
@@ -513,6 +591,53 @@
           "label": "es-basic.com",
           "text": "Fotbollsapp för scouting: hitta, utvärdera och följ spelare på ett ställe. Finns på spanska och portugisiska."
         }
+      ]
+    },
+    "legal": {
+      "slug": "sv/integritet/",
+      "link": "Integritetspolicy och rättslig information",
+      "title": "Integritetspolicy och rättslig information",
+      "back": "← Tillbaka till startsidan",
+      "consent": "Genom att skicka formuläret godkänner du vår {link}.",
+      "consent_link": "integritetspolicy",
+      "updated": "Senast uppdaterad: oktober 2026",
+      "sections": [
+        [
+          "Personuppgiftsansvarig och ägare av webbplatsen",
+          "Webbplatsen ägs av {name}, organisationsnummer (CIF) {cif}, med adress {address}. Kontakt: {email}."
+        ],
+        [
+          "Vilka uppgifter vi behandlar",
+          "Bara det du skickar till oss: ditt namn, din e-post, ditt telefonnummer (om du anger det) och meddelandet i kontaktformuläret, eller det du mejlar oss."
+        ],
+        [
+          "Varför vi använder dem",
+          "För att svara på din förfrågan och, om du ber om det, ta fram en offert eller utföra våra tjänster. Vi skickar ingen reklam utan ditt samtycke."
+        ],
+        [
+          "Rättslig grund",
+          "Ditt samtycke när du skickar formuläret och, om vi börjar samarbeta, fullgörandet av avtalet."
+        ],
+        [
+          "Hur länge vi sparar dem",
+          "Så länge som behövs för att hantera din förfrågan. Vid en affärsrelation under de tider som lagen kräver (till exempel för bokföring och skatt)."
+        ],
+        [
+          "Vilka vi delar dem med",
+          "Vi säljer eller lämnar inte ut dina uppgifter. För att webbplatsen ska fungera använder vi dessa leverantörer: Clouding.io (webbhotell, i Spanien), Web3Forms (levererar formulärets meddelanden via e-post) och Google Fonts (typsnitt; din webbläsare hämtar dem från Google). Vi lämnar bara ut uppgifter till myndigheter när lagen kräver det."
+        ],
+        [
+          "Dina rättigheter",
+          "Du kan begära tillgång till, rättelse eller radering av dina uppgifter, invända mot eller begränsa behandlingen, eller begära dataportabilitet genom att skriva till {email}. Om du anser att vi inte hanterat din begäran rätt kan du klaga hos den spanska dataskyddsmyndigheten (www.aepd.es)."
+        ],
+        [
+          "Cookies",
+          "Webbplatsen använder inga reklam- eller analyscookies och spårar inte hur du surfar."
+        ],
+        [
+          "Immateriella rättigheter",
+          "Texter, bilder, logotyper och design på webbplatsen tillhör {name} eller används med tillstånd. De får inte kopieras utan tillstånd."
+        ]
       ]
     }
   }
