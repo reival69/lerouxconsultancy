@@ -26,8 +26,10 @@ if (form) {
       form.reset();
       status.textContent = form.dataset.ok;
       status.classList.add("ok");
-    } catch {
-      status.textContent = form.dataset.error;
+    } catch (error) {
+      // Show the reason too, so a problem with the form service can be diagnosed
+      console.error("Contact form:", error);
+      status.textContent = `${form.dataset.error} (${error.message || error})`;
       status.classList.add("error");
     } finally {
       button.disabled = false;
